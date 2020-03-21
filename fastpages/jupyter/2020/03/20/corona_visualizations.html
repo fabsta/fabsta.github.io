@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Corona visualizations | homepage of Fabian Schreiber</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Corona visualizations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Awesome summary" />
+<meta property="og:description" content="Awesome summary" />
+<link rel="canonical" href="https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html" />
+<meta property="og:url" content="https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html" />
+<meta property="og:site_name" content="homepage of Fabian Schreiber" />
+<meta property="og:image" content="https://fabsta.github.io/images/some_folder/your_image.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-20T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-03-20T00:00:00-05:00","headline":"Corona visualizations","image":"https://fabsta.github.io/images/some_folder/your_image.png","description":"Awesome summary","mainEntityOfPage":{"@type":"WebPage","@id":"https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html"},"@type":"BlogPosting","url":"https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html","dateModified":"2020-03-20T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://fabsta.github.io/feed.xml" title="homepage of Fabian Schreiber" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Corona visualizations | homepage of Fabian Schreiber</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Corona visualizations" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Awesome summary" />
+<meta property="og:description" content="Awesome summary" />
+<link rel="canonical" href="https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html" />
+<meta property="og:url" content="https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html" />
+<meta property="og:site_name" content="homepage of Fabian Schreiber" />
+<meta property="og:image" content="https://fabsta.github.io/images/some_folder/your_image.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-20T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-03-20T00:00:00-05:00","headline":"Corona visualizations","image":"https://fabsta.github.io/images/some_folder/your_image.png","description":"Awesome summary","mainEntityOfPage":{"@type":"WebPage","@id":"https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html"},"@type":"BlogPosting","url":"https://fabsta.github.io/fastpages/jupyter/2020/03/20/corona_visualizations.html","dateModified":"2020-03-20T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://fabsta.github.io/feed.xml" title="homepage of Fabian Schreiber" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">homepage of Fabian Schreiber</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Corona visualizations</h1><p class="page-description">Awesome summary</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-20T00:00:00-05:00" itemprop="datePublished">
+        Mar 20, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#fastpages">fastpages</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/fabsta//tree/master/_notebooks/corona_visualizations.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/fabsta//master?filepath=_notebooks%2Fcorona_visualizations.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/fabsta//blob/master/_notebooks/corona_visualizations.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/corona_visualizations.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = 'retina'
+
+<span class="n">chart_width</span> <span class="o">=</span> <span class="mi">550</span>
+<span class="n">chart_height</span><span class="o">=</span> <span class="mi">400</span>
+
+<span class="c1"># source: https://colab.research.google.com/github/github/covid19-dashboard/blob/master/_notebooks/2020-03-19-cases-and-deaths-per-million.ipynb</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">SchemaValidationError</span>                     Traceback (most recent call last)
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_code</span><span class="ansi-blue-fg">(self, code_obj, result, async_)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3330</span>                 <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 3331</span><span class="ansi-red-fg">                     </span>exec<span class="ansi-blue-fg">(</span>code_obj<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>user_global_ns<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>user_ns<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3332</span>             <span class="ansi-green-fg">finally</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-5-89e6e5decabe&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     22</span> scales <span class="ansi-blue-fg">=</span> alt<span class="ansi-blue-fg">.</span>selection_interval<span class="ansi-blue-fg">(</span>bind<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'scales'</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 23</span><span class="ansi-red-fg"> </span>selection <span class="ansi-blue-fg">=</span> alt<span class="ansi-blue-fg">.</span>selection_multi<span class="ansi-blue-fg">(</span>fields<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'location'</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> bind<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'legend'</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     24</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/vegalite/v3/api.py</span> in <span class="ansi-cyan-fg">selection_multi</span><span class="ansi-blue-fg">(**kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    235</span>     <span class="ansi-blue-fg">"""Create a selection with type='multi'"""</span>
+<span class="ansi-green-fg">--&gt; 236</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> selection<span class="ansi-blue-fg">(</span>type<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'multi'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    237</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/vegalite/v3/api.py</span> in <span class="ansi-cyan-fg">selection</span><span class="ansi-blue-fg">(name, type, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    223</span>     """
+<span class="ansi-green-fg">--&gt; 224</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> Selection<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> core<span class="ansi-blue-fg">.</span>SelectionDef<span class="ansi-blue-fg">(</span>type<span class="ansi-blue-fg">=</span>type<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    225</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/vegalite/v3/schema/core.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, *args, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">  12140</span>     <span class="ansi-green-fg">def</span> __init__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">&gt; 12141</span><span class="ansi-red-fg">         </span>super<span class="ansi-blue-fg">(</span>SelectionDef<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>__init__<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">  12142</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, *args, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    153</span>         <span class="ansi-green-fg">if</span> DEBUG_MODE <span class="ansi-green-fg">and</span> self<span class="ansi-blue-fg">.</span>_class_is_valid_at_instantiation<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 154</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>to_dict<span class="ansi-blue-fg">(</span>validate<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    155</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">to_dict</span><span class="ansi-blue-fg">(self, validate, ignore, context)</span>
+<span class="ansi-green-intense-fg ansi-bold">    301</span>             <span class="ansi-green-fg">except</span> jsonschema<span class="ansi-blue-fg">.</span>ValidationError <span class="ansi-green-fg">as</span> err<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 302</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> SchemaValidationError<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> err<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    303</span>         <span class="ansi-green-fg">return</span> result
+
+<span class="ansi-red-fg">&lt;class 'str'&gt;</span>: (&lt;class 'TypeError'&gt;, TypeError('sequence item 1: expected str instance, int found'))
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_code</span><span class="ansi-blue-fg">(self, code_obj, result, async_)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3346</span>             <span class="ansi-green-fg">if</span> result <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   3347</span>                 result<span class="ansi-blue-fg">.</span>error_in_exec <span class="ansi-blue-fg">=</span> sys<span class="ansi-blue-fg">.</span>exc_info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-fg">-&gt; 3348</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>showtraceback<span class="ansi-blue-fg">(</span>running_compiled_code<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3349</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   3350</span>             outflag <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">showtraceback</span><span class="ansi-blue-fg">(self, exc_tuple, filename, tb_offset, exception_only, running_compiled_code)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2047</span>                                             value, tb, tb_offset=tb_offset)
+<span class="ansi-green-intense-fg ansi-bold">   2048</span> 
+<span class="ansi-green-fg">-&gt; 2049</span><span class="ansi-red-fg">                     </span>self<span class="ansi-blue-fg">.</span>_showtraceback<span class="ansi-blue-fg">(</span>etype<span class="ansi-blue-fg">,</span> value<span class="ansi-blue-fg">,</span> stb<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2050</span>                     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>call_pdb<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   2051</span>                         <span class="ansi-red-fg"># drop into debugger</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/ipykernel/zmqshell.py</span> in <span class="ansi-cyan-fg">_showtraceback</span><span class="ansi-blue-fg">(self, etype, evalue, stb)</span>
+<span class="ansi-green-intense-fg ansi-bold">    544</span>             <span class="ansi-blue-fg">u'traceback'</span> <span class="ansi-blue-fg">:</span> stb<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    545</span>             <span class="ansi-blue-fg">u'ename'</span> <span class="ansi-blue-fg">:</span> unicode_type<span class="ansi-blue-fg">(</span>etype<span class="ansi-blue-fg">.</span>__name__<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">--&gt; 546</span><span class="ansi-red-fg">             </span><span class="ansi-blue-fg">u'evalue'</span> <span class="ansi-blue-fg">:</span> py3compat<span class="ansi-blue-fg">.</span>safe_unicode<span class="ansi-blue-fg">(</span>evalue<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    547</span>         }
+<span class="ansi-green-intense-fg ansi-bold">    548</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/ipython_genutils/py3compat.py</span> in <span class="ansi-cyan-fg">safe_unicode</span><span class="ansi-blue-fg">(e)</span>
+<span class="ansi-green-intense-fg ansi-bold">     63</span>     """
+<span class="ansi-green-intense-fg ansi-bold">     64</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 65</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> unicode_type<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     66</span>     <span class="ansi-green-fg">except</span> UnicodeError<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     67</span>         <span class="ansi-green-fg">pass</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">__unicode__</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">     91</span>         schema_path <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'{}.{}'</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>cls<span class="ansi-blue-fg">.</span>__module__<span class="ansi-blue-fg">,</span> cls<span class="ansi-blue-fg">.</span>__name__<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     92</span>         schema_path<span class="ansi-blue-fg">.</span>extend<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>schema_path<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 93</span><span class="ansi-red-fg">         schema_path = '-&gt;'.join(val for val in schema_path[:-1]
+</span><span class="ansi-green-intense-fg ansi-bold">     94</span>                                 if val not in ('properties',
+<span class="ansi-green-intense-fg ansi-bold">     95</span>                                                <span class="ansi-blue-fg">'additionalProperties'</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-red-fg">TypeError</span>: sequence item 1: expected str instance, int found</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>Deaths per Million</th>
+      <th>Log of Deaths per Million</th>
+    </tr>
+    <tr>
+      <th>Country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>China</th>
+      <td>2020-03-20</td>
+      <td>2.307882</td>
+      <td>0.836330</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <td>2020-03-20</td>
+      <td>6.693804</td>
+      <td>1.901182</td>
+    </tr>
+    <tr>
+      <th>Iran</th>
+      <td>2020-03-20</td>
+      <td>17.655874</td>
+      <td>2.871069</td>
+    </tr>
+    <tr>
+      <th>Italy</th>
+      <td>2020-03-20</td>
+      <td>67.924641</td>
+      <td>4.218399</td>
+    </tr>
+    <tr>
+      <th>South Korea</th>
+      <td>2020-03-20</td>
+      <td>1.843780</td>
+      <td>0.611818</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <td>2020-03-20</td>
+      <td>22.500599</td>
+      <td>3.113542</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <td>2020-03-20</td>
+      <td>2.689570</td>
+      <td>0.989381</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">SchemaValidationError</span>                     Traceback (most recent call last)
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_code</span><span class="ansi-blue-fg">(self, code_obj, result, async_)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3330</span>                 <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 3331</span><span class="ansi-red-fg">                     </span>exec<span class="ansi-blue-fg">(</span>code_obj<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>user_global_ns<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>user_ns<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3332</span>             <span class="ansi-green-fg">finally</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-9-f4a8f2102b29&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     22</span> scales <span class="ansi-blue-fg">=</span> alt<span class="ansi-blue-fg">.</span>selection_interval<span class="ansi-blue-fg">(</span>bind<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'scales'</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 23</span><span class="ansi-red-fg"> </span>selection <span class="ansi-blue-fg">=</span> alt<span class="ansi-blue-fg">.</span>selection_multi<span class="ansi-blue-fg">(</span>fields<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'location'</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> bind<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'legend'</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     24</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/vegalite/v3/api.py</span> in <span class="ansi-cyan-fg">selection_multi</span><span class="ansi-blue-fg">(**kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    235</span>     <span class="ansi-blue-fg">"""Create a selection with type='multi'"""</span>
+<span class="ansi-green-fg">--&gt; 236</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> selection<span class="ansi-blue-fg">(</span>type<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'multi'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    237</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/vegalite/v3/api.py</span> in <span class="ansi-cyan-fg">selection</span><span class="ansi-blue-fg">(name, type, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    223</span>     """
+<span class="ansi-green-fg">--&gt; 224</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> Selection<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> core<span class="ansi-blue-fg">.</span>SelectionDef<span class="ansi-blue-fg">(</span>type<span class="ansi-blue-fg">=</span>type<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    225</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/vegalite/v3/schema/core.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, *args, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">  12140</span>     <span class="ansi-green-fg">def</span> __init__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">&gt; 12141</span><span class="ansi-red-fg">         </span>super<span class="ansi-blue-fg">(</span>SelectionDef<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>__init__<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">  12142</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, *args, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    153</span>         <span class="ansi-green-fg">if</span> DEBUG_MODE <span class="ansi-green-fg">and</span> self<span class="ansi-blue-fg">.</span>_class_is_valid_at_instantiation<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 154</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>to_dict<span class="ansi-blue-fg">(</span>validate<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    155</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">to_dict</span><span class="ansi-blue-fg">(self, validate, ignore, context)</span>
+<span class="ansi-green-intense-fg ansi-bold">    301</span>             <span class="ansi-green-fg">except</span> jsonschema<span class="ansi-blue-fg">.</span>ValidationError <span class="ansi-green-fg">as</span> err<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 302</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> SchemaValidationError<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> err<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    303</span>         <span class="ansi-green-fg">return</span> result
+
+<span class="ansi-red-fg">&lt;class 'str'&gt;</span>: (&lt;class 'TypeError'&gt;, TypeError('sequence item 1: expected str instance, int found'))
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_code</span><span class="ansi-blue-fg">(self, code_obj, result, async_)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3346</span>             <span class="ansi-green-fg">if</span> result <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   3347</span>                 result<span class="ansi-blue-fg">.</span>error_in_exec <span class="ansi-blue-fg">=</span> sys<span class="ansi-blue-fg">.</span>exc_info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-fg">-&gt; 3348</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>showtraceback<span class="ansi-blue-fg">(</span>running_compiled_code<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3349</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   3350</span>             outflag <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">showtraceback</span><span class="ansi-blue-fg">(self, exc_tuple, filename, tb_offset, exception_only, running_compiled_code)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2047</span>                                             value, tb, tb_offset=tb_offset)
+<span class="ansi-green-intense-fg ansi-bold">   2048</span> 
+<span class="ansi-green-fg">-&gt; 2049</span><span class="ansi-red-fg">                     </span>self<span class="ansi-blue-fg">.</span>_showtraceback<span class="ansi-blue-fg">(</span>etype<span class="ansi-blue-fg">,</span> value<span class="ansi-blue-fg">,</span> stb<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2050</span>                     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>call_pdb<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   2051</span>                         <span class="ansi-red-fg"># drop into debugger</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/ipykernel/zmqshell.py</span> in <span class="ansi-cyan-fg">_showtraceback</span><span class="ansi-blue-fg">(self, etype, evalue, stb)</span>
+<span class="ansi-green-intense-fg ansi-bold">    544</span>             <span class="ansi-blue-fg">u'traceback'</span> <span class="ansi-blue-fg">:</span> stb<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    545</span>             <span class="ansi-blue-fg">u'ename'</span> <span class="ansi-blue-fg">:</span> unicode_type<span class="ansi-blue-fg">(</span>etype<span class="ansi-blue-fg">.</span>__name__<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">--&gt; 546</span><span class="ansi-red-fg">             </span><span class="ansi-blue-fg">u'evalue'</span> <span class="ansi-blue-fg">:</span> py3compat<span class="ansi-blue-fg">.</span>safe_unicode<span class="ansi-blue-fg">(</span>evalue<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    547</span>         }
+<span class="ansi-green-intense-fg ansi-bold">    548</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/ipython_genutils/py3compat.py</span> in <span class="ansi-cyan-fg">safe_unicode</span><span class="ansi-blue-fg">(e)</span>
+<span class="ansi-green-intense-fg ansi-bold">     63</span>     """
+<span class="ansi-green-intense-fg ansi-bold">     64</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 65</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> unicode_type<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     66</span>     <span class="ansi-green-fg">except</span> UnicodeError<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     67</span>         <span class="ansi-green-fg">pass</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/github_page/lib/python3.7/site-packages/altair/utils/schemapi.py</span> in <span class="ansi-cyan-fg">__unicode__</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">     91</span>         schema_path <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'{}.{}'</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>cls<span class="ansi-blue-fg">.</span>__module__<span class="ansi-blue-fg">,</span> cls<span class="ansi-blue-fg">.</span>__name__<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     92</span>         schema_path<span class="ansi-blue-fg">.</span>extend<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>schema_path<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 93</span><span class="ansi-red-fg">         schema_path = '-&gt;'.join(val for val in schema_path[:-1]
+</span><span class="ansi-green-intense-fg ansi-bold">     94</span>                                 if val not in ('properties',
+<span class="ansi-green-intense-fg ansi-bold">     95</span>                                                <span class="ansi-blue-fg">'additionalProperties'</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-red-fg">TypeError</span>: sequence item 1: expected str instance, int found</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="fabsta/"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/fastpages/jupyter/2020/03/20/corona_visualizations.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Collection of blog posts and links.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fabschreiber" title="fabschreiber"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
