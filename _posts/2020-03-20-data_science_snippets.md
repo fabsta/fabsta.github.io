@@ -1796,7 +1796,7 @@ jupyter lab:  Shortcut to run single command: [stackoverflow](https://stackoverf
 
 
 ## Notebooks in production
-directory structure, layout, workflow: [blog post](https://pbpython.com/notebook-process.html)
+[directory structure](https://www.scaler.com/topics/directory-structure-in-os/), layout, workflow: [blog post](https://pbpython.com/notebook-process.html)
 also: [cookiecutter](http://drivendata.github.io/cookiecutter-data-science/)
 
 ### workflow 
